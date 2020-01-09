@@ -16,13 +16,9 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
+  displayName: 'Run a multi-line script' 
+  
 - task: migoooo@0
   inputs:
-    samplestring: 'world'
-
-
-- task: migoooo@0
-  inputs:
-    samplestring: '321'
+    Value: '3456'
+    Key: 'key'
