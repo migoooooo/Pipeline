@@ -21,3 +21,8 @@ steps:
 - task: migoooo@0
   inputs:
     samplestring: 'world'
+
+
+- task: migoooo@0
+  inputs:
+    samplestring: '321'
