@@ -20,11 +20,10 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: migoooo@0
+- task: MSBuild@1
   inputs:
-    Value: '$(platform)'
-    Key: 'key'
-
+    solution: '**/*.sln'
+    platform: '$(platform)'
 - task: CmdLine@2
   inputs:
     script: |
