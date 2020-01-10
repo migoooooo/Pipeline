@@ -22,7 +22,12 @@ steps:
 
 - task: MSBuild@1
   inputs:
-    solution: '**/*.sln'
+    solution: 'solution1.sln'
     platform: '$(platform)'
-
-- bash: echo $(platform)
+    configuration: '$(Configuration)'
+ 
+- task: MSBuild@1
+  inputs:
+    solution: 'solution2.sln'
+    platform: '$(platform)'
+    configuration: '$(Configuration)'
