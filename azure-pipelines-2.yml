@@ -18,16 +18,11 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  displayName: 'Run a multi-line script' 
 
-- task: MSBuild@1
+- task: migoooo@0
   inputs:
-    solution: 'solution1.sln'
-    platform: '$(platform)'
-    configuration: '$(Configuration)'
- 
-- task: MSBuild@1
-  inputs:
-    solution: 'solution2.sln'
-    platform: '$(platform)'
-    configuration: '$(Configuration)'
+    VariableName: 'aaa'
+    Value: 'Value'
+
+- script: echo Hello, $(aa)!
