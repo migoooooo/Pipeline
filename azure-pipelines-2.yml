@@ -25,4 +25,4 @@ steps:
     VariableName: 'aaa'
     Value: 'Value'
 
-- script: echo Hello, $(aa)!
+- script: echo Hello, $(aaa)!
