@@ -20,10 +20,8 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'  
 
-- task: VariableSetTask@1
+- task: migoooo@0
   inputs:
     VariableName: 'aaa'
-    Value: 'aaa'
-    IsSecret: false
-    
+    Value: 'world'
 - script: echo Hello, $(aaa)!
