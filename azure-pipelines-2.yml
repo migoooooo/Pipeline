@@ -24,7 +24,9 @@ steps:
   inputs:
     VariableName: 'aaa'
     Value: 'world'
-- script: echo Hello, $(aaa)! 
+- script: echo Hello, $(aaa)!  
+
+
 - task: build-task@0
   inputs:
     FabrikamService: 'FabrikamTest'
