@@ -21,7 +21,6 @@ steps:
   displayName: 'Run a multi-line script'  
 
 
-
 - task: build-task@0
   inputs:
     FabrikamService: 'FabrikamTest'
